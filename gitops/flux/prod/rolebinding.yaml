@@ -5,11 +5,11 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
   name: flux-applier-admin
-  namespace: <projekt-namespace>-prod
+  namespace: tobias-e-e-devops-prod
 subjects:
   - kind: ServiceAccount
     name: flux-applier
-    namespace: <projekt-namespace>-prod
+    namespace: tobias-e-e-devops-prod
 roleRef:
   kind: ClusterRole
   name: admin

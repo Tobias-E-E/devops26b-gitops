@@ -19,7 +19,7 @@ spec:
           # Placeholder owner: publish-images.yml lowercases GITHUB_REPOSITORY_OWNER
           # and pushes ghcr.io/<owner>/template-app-backend:latest — fill in the
           # real (lowercased) org/user before applying.
-          image: ghcr.io/<ägare>/template-app-backend:latest
+          image: ghcr.io/tobias-e-e/template-app-backend:latest
           ports:
             - containerPort: 8000
           # Rahti LimitRange caps CPU limit/request ratio at 5 per container

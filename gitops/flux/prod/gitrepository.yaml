@@ -7,12 +7,12 @@ apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:
   name: template-app-gitops
-  namespace: <projekt-namespace>-prod
+  namespace: tobias-e-e-devops-prod
 spec:
   interval: 1m
   # URL to YOUR OWN manifest repo — see ../../README.md's copy-to-own-repo
   # flow. There is no course-provided repo to point at here; each student
   # (or project) creates their own and fills this in.
-  url: <manifest-repo-url>
+  url: https://github.com/tobias-e-e/devops26b-gitops.git
   ref:
     branch: main

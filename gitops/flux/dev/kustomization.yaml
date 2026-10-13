@@ -6,7 +6,7 @@ apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
   name: template-app-dev
-  namespace: <projekt-namespace>-dev
+  namespace: tobias-e-e-devops-dev
 spec:
   interval: 1m
   path: ./gitops/overlays/dev
@@ -15,4 +15,4 @@ spec:
     kind: GitRepository
     name: template-app-gitops
   serviceAccountName: flux-applier
-  targetNamespace: <projekt-namespace>-dev
+  targetNamespace: tobias-e-e-devops-dev

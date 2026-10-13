@@ -17,7 +17,7 @@ spec:
       containers:
         - name: frontend
           # Placeholder owner — see backend-deployment.yaml for details.
-          image: ghcr.io/<ägare>/template-app-frontend:latest
+          image: ghcr.io/tobias-e-e/template-app-frontend:latest
           ports:
             - containerPort: 8080
           # Same ratio<=5 LimitRange constraint as the backend container.
