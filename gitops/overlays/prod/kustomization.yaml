@@ -19,3 +19,9 @@ replicas:
     count: 2
   - name: frontend
     count: 2
+
+images:
+  - name: ghcr.io/tobias-e-e/template-app-frontend
+    newTag: 4616f40db8dd62b8b8cc4735427e5e424e387645
+  - name: ghcr.io/tobias-e-e/template-app-backend
+    newTag: 4616f40db8dd62b8b8cc4735427e5e424e387645
